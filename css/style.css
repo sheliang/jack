@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    overflow-x: hidden;
+    font-family: 'Microsoft Yahei', "Helvetica", "Verdana", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    background-color: #fefefe;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ul, ul li, ol li, li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea {
+    border: 0;
+    outline: none;
+    -webkit-appearance: none;
+    /*去掉内部阴影*/
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+input[type='input'] {
+    -webkit-appearance: none;
+}
+div:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/*移除ios样式*/
+
+input[type='checkbox'] {
+    -webkit-appearance: checkbox;
+}
+img {
+    max-width: 100%;
+}
+i {
+    font-style: normal;
+}
+a {
+    color: #333;
+}
+
+/*去除a标签的虚线框*/
+
+a {
+    outline: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 10px;
+    -webkit-text-size-adjust: 100%;
+    /*禁止文本缩放*/
+    background-color: #fefefe;
+}
+@media screen and (min-width:321px) and (max-width:375px) {
+    html {
+        font-size: 11px
+    }
+}
+@media screen and (min-width:376px) and (max-width:414px) {
+    html {
+        font-size: 12px
+    }
+}
+@media screen and (min-width:415px) and (max-width:639px) {
+    html {
+        font-size: 15px
+    }
+}
+@media screen and (min-width:640px) and (max-width:719px) {
+    html {
+        font-size: 20px
+    }
+}
+@media screen and (min-width:720px) and (max-width:749px) {
+    html {
+        font-size: 22.5px
+    }
+}
+@media screen and (min-width:750px) and (max-width:799px) {
+    html {
+        font-size: 23.5px
+    }
+}
+@media screen and (min-width:800px) {
+    html {
+        font-size: 25px
+    }
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
+::-webkit-input-placeholder {
+    font-size: 1.5rem;
+}
+
+/*盒模型样式*/
+
+.flex1 {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+
+/*常用css类*/
+
+.container {
+    padding: 15px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+.lf {
+    float: left;
+}
+.rt {
+    float: right;
+}
+.btn {
+    display: inline-block;
+    width: 100%;
+    line-height: 2rem;
+    border-radius: 6px;
+    margin: .5rem 0;
+    text-align: center;
+    border: none;
+    outline: 0;
+}
+#tabs {
+    /*移动端使用*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+.dialog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.bg-success {
+    background-color: #00ad84;
+    color: #fefefe;
+}
+.text-success {
+    color: #00ad84;
+}
+.bg-gray {
+    background-color: #cacaca;
+    color: #fefefe;
+}
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.loading {
+    vertical-align: middle;
+}
+
+/*需要隐藏的标签，类*/
+
+#tabs {
+    display: none;
+}

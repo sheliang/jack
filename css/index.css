@@ -1,0 +1,23 @@
+@charset "UTF-8";
+header {
+    background-color: #eee;
+}
+#header {
+    width: 80%;
+    line-height: 2rem;
+    font-size: 1rem;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+#navigation li {
+    float: left;
+    margin-right: .5rem;
+    font-size: .7rem;
+}
+#navigation li a {
+    padding: .5rem 1rem;
+    color: #0cc;
+}
+#navigation li a:hover {
+    color: #363636;
+}
