@@ -1,3 +1,0 @@
-# jack
-jack
-jackie
